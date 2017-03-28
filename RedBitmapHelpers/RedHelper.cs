@@ -8,7 +8,7 @@ namespace Red.BitmapHelpers
 {
     public static class RedHelper
     {
-        internal static Bitmap LoadBitmap(string fileName)
+        public static Bitmap LoadBitmap(string fileName)
         {
             using (var fs = new FileStream(fileName, FileMode.Open, FileAccess.Read, FileShare.Read))
             {
@@ -16,7 +16,7 @@ namespace Red.BitmapHelpers
             }
         }
 
-        internal static Bitmap GetCopyFromScreen(int screenPositionX, int screenPositionY, int width, int height)
+        public static Bitmap GetCopyFromScreen(int screenPositionX, int screenPositionY, int width, int height)
         {
             using (var bmpScreenCapture = new Bitmap(width, height))
             {
@@ -28,14 +28,14 @@ namespace Red.BitmapHelpers
             }
         }
 
-        internal static Color GetColor(this byte[,,] data, int x, int y)
+        public static Color GetColor(this byte[,,] data, int x, int y)
         {
             return Color.FromArgb(data[0, y, x], data[1, y, x], data[2, y, x]);
         }
 
         [SuppressMessage("ReSharper", "InconsistentNaming")]
         [SuppressMessage("ReSharper", "TooWideLocalVariableScope")]
-        internal static unsafe byte[,,] BitmapToByteRgbQ(this Bitmap bmp)
+        public static unsafe byte[,,] BitmapToByteRgbQ(this Bitmap bmp)
         {
             var width = bmp.Width;
             var height = bmp.Height;
