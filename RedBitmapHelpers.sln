@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.26228.10
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Red.BitmapHelpers", "RedBitmapHelpers\Red.BitmapHelpers.csproj", "{B0F3CEC6-842C-4D58-8FA4-9594F7D16F14}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{F6EC3827-3577-494F-8E72-261FA952BA79}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Red.BitmapHelper.Test", "Red.BitmapHelper.Test\Red.BitmapHelper.Test.csproj", "{97E67243-E003-4745-95A9-F04477D0A292}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,8 +19,15 @@ Global
 		{B0F3CEC6-842C-4D58-8FA4-9594F7D16F14}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B0F3CEC6-842C-4D58-8FA4-9594F7D16F14}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B0F3CEC6-842C-4D58-8FA4-9594F7D16F14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97E67243-E003-4745-95A9-F04477D0A292}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97E67243-E003-4745-95A9-F04477D0A292}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97E67243-E003-4745-95A9-F04477D0A292}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97E67243-E003-4745-95A9-F04477D0A292}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{97E67243-E003-4745-95A9-F04477D0A292} = {F6EC3827-3577-494F-8E72-261FA952BA79}
 	EndGlobalSection
 EndGlobal
