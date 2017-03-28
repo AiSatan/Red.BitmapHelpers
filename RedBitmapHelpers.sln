@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26228.10
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedBitmapHelpers", "RedBitmapHelpers\RedBitmapHelpers.csproj", "{B0F3CEC6-842C-4D58-8FA4-9594F7D16F14}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Red.BitmapHelpers", "RedBitmapHelpers\Red.BitmapHelpers.csproj", "{B0F3CEC6-842C-4D58-8FA4-9594F7D16F14}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

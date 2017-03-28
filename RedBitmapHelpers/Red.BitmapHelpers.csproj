@@ -1,14 +1,14 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>b0f3cec6-842c-4d58-8fa4-9594f7d16f14</ProjectGuid>
+    <ProjectGuid>{B0F3CEC6-842C-4D58-8FA4-9594F7D16F14}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>RedBitmapHelpers</RootNamespace>
-    <AssemblyName>RedBitmapHelpers</AssemblyName>
+    <RootNamespace>Red.BitmapHelpers</RootNamespace>
+    <AssemblyName>Red.BitmapHelpers</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -20,6 +20,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -28,26 +29,22 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System"/>
-    
-    <Reference Include="System.Core"/>
-    <Reference Include="System.Xml.Linq"/>
-    <Reference Include="System.Data.DataSetExtensions"/>
-    
-    
-    <Reference Include="Microsoft.CSharp"/>
-    
-    <Reference Include="System.Data"/>
-    
-    <Reference Include="System.Net.Http"/>
-    
-    <Reference Include="System.Xml"/>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="RedHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
- </Project>
+</Project>
